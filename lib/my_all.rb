@@ -1,9 +1,9 @@
 require 'pry'
 
 def my_all?(collection)
-  counter = 0
+  i = 0
   block_return_values = []
-  while conter < collection.length
+  while i < collection.length
     block_return_values.push(yield(collection[i]))
     counter += 1
   end
