@@ -5,7 +5,7 @@ def my_all?(collection)
   block_return_values = []
   while i < collection.length
     block_return_values.push(yield(collection[i]))
-    counter += 1
+    i += 1
   end
   block_return_values.include?(false) ? false : true
 end
